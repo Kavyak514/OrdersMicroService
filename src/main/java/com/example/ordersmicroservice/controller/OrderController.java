@@ -5,10 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ControllerClass {
-
-    @GetMapping("/welcome")
-    public String welcome() {
-        return "Welcome to Microservices";
+@RequestMapping("/order")
+public class OrderController {
+    @GetMapping("/status/check")
+    public String status() {
+        return "Hurray The Code is Working!!";
     }
 }
+
