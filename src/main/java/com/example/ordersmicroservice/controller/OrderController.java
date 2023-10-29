@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
     @GetMapping("/status/check")
     public String status() {
-        return "Hurray The Code is Working!!";
+        return "Hurray , The Order Service is Working Good and Fine!!";
     }
 }
 
